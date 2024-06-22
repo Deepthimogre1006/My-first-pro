@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Colspan and Rowspan</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Roll no.</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th colspan="2">Marks</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Prerna</td>
+            <td>3rd</td>
+            <td >30</td>
+            <td rowspan="2" style="background-color: yellow;">30</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Deepthi</td>
+            <td rowspan="2" style="background-color: rgba(14, 19, 126, 0.323);">4th</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Jasper</td>
+            <td>40</td>
+            <td>50</td>
+        </tr>
+    </table>
+</body>
+</html>
+
